@@ -121,7 +121,7 @@ Route::prefix('admin')->middleware('admin')->group(function () {
 
 Auth::routes(['verify'=>true]);
 
-// Route::get('/home', [HomeController::class, 'index'])->middleware('verified')->name('home');
-Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/home', [HomeController::class, 'index'])->middleware('verified')->name('home');
+
 
 Route::get('/logout', [LoginController::class,'logout'])->name('logout');

@@ -77,7 +77,7 @@
                         <td>{{$testimonial['name']}}</td>
                         <td>{{$testimonial['position']}}</td>
                         <td>@if($testimonial->published)  yes✅ @else  no ❎ @endif </td>
-                        <td><a href="edittestimonial/{{$testimonial->id}}"><img src="{{asset('frontend/images/edit.png')}}" alt="Edit"></td>
+                        <td><a href="edittestimonials/{{$testimonial->id}}"><img src="{{asset('frontend/images/edit.png')}}" alt="Edit"></td>
                         <td><a href="deletetestimonial/{{$testimonial->id}}"><img src="{{asset('frontend/images/delete.png')}}" alt="Delete"></a></td>
                       </tr>
                       @endforeach
