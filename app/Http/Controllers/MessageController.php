@@ -28,6 +28,7 @@ class MessageController extends Controller
         $message->save();
     }
 
+
     
     return view('admin.showmessage', compact('messages'));
     }
